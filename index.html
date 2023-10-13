@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+table{
+border: 1px solid black;
+border-collapse: collapse;
+}
+th {
+background-color: yellow;
+}
+th, td {
+width: 120px;
+text-align: center;
+border: 1px solid black;
+border-collapse: collapse;
+}
+#x1,
+#y2,
+#x3,#x4,#x5 {
+display: none;
+}
+.section {
+width: 550px;
+height: 220px;
+}
+button {
+padding: 6px 8px;
+background-color: rgb(2, 31, 31);
+color: white;
+border: none;
+border-radius: 3px;
+margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<div class="section">
+<h1>Employee salary</h1>
+<table>
+<tr>
+<th>Emp Name</th>
+<th>Emp Id</th>
+<th>Emp City</th>
+<th>Emp Position</th>
+<th>Emp Salary</th>
+</tr>
+<tr>
+<td>Sachin</td>
+<td>001</td>
+<td>Patna</td>
+<td>HR</td>
+<td id="x1">50000</td>
+</tr>
+<tr>
+<td>Prateek</td>
+<td>006</td>
+<td>Pune</td>
+<td>Accountant</td>
+<td id="y2">40000</td>
+</tr>
+<tr>
+<td>Abhishek</td>
+<td>003</td>
+<td>Noida</td>
+<td>Manager</td>
+<td id="x3">48000</td>
+</tr>
+<tr>
+<td>Abhijeet</td>
+<td>005</td>
+<td>Gurugram</td>
+<td>Developer</td>
+<td id="x4">55000</td>
+</tr>
+</table>
+</div>
+<button type="button" onclick="myfun()">Display salaries</button>
+<button type="button" onclick="myfun2()">Hide salaries</button>
+<script>
+function myfun() {
+document.getElementById('x1').style.display = 'block';
+document.getElementById('y2').style.display = 'block';
+document.getElementById('x3').style.display = 'block';
+document.getElementById('x4').style.display = 'block';
+document.getElementById('x5').style.display = 'block';
+}
+function myfun2() {
+document.getElementById('x1').style.display = 'none';
+document.getElementById('y2').style.display = 'none';
+document.getElementById('x3').style.display = 'none';
+document.getElementById('x4').style.display = 'none';
+document.getElementById('x5').style.display = 'none';
+}
+</script>
+</body>
+</html
